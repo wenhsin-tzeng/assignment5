@@ -1,0 +1,127 @@
+body{
+  background-color: #ff196b;
+  font-family: 'Work Sans', sans-serif;
+}
+/* .kiss{
+  position: relative;
+  text-align: center;
+  font-size: 400px;
+  color: white;
+  top: 110px;
+}
+#letterK{
+  background-color: black;
+  position: absolute;
+  font-size: 400px;
+  color: white;
+  top: 118px;
+  left: 228pt;
+}
+#letterK:hover{
+  color: pink;
+  animation-name: pulse-grow;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+@keyframe K-expand{
+  0% {top: 0%;}
+  100% {top: 100%;}
+} */
+
+.button{
+    display: inline-block;
+    font-size: 400px;
+    position: absolute;
+    text-align: center;
+    left: 228pt;
+    top: 118px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    /* 10% { color:#ff0047; transform: scale(1.1); } */
+    20% { transform: scale(1); }
+    30% { color:pink; transform: scale(1.1); }
+    40% { transform: scale(1); }
+    50% { color:#ff0047; transform: scale(1.1); }
+    60% { transform: scale(1); }
+    70% { color:pink; transform: scale(1.1); }
+    80% { transform: scale(1); }
+    90% { color:#ff0047; transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.pulse:hover {
+    animation-name: pulse_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pulse:active{
+  animation-play-state: paused;
+}
+/* left: 310pt;
+top: 500px;
+padding-top: 120px; */
+.heart {
+  left: 448pt;
+  padding-top: 270px;
+  fill: rgb(255,25,107); ;
+  position: relative;
+  top: 5px;
+  width: 80px;
+  animation: float alternate-reverse infinite 2s ;
+}
+.heart:hover {
+  fill: pink;
+}
+.heart:active {
+  animation: pulse 3s ease-in infinite;
+  fill: white;
+}
+
+@keyframes float {
+  0% { top: 5px; fill: rgb(255,25,107); }
+  10% { top: 5px; fill: rgb(255,25,107); }
+  100% { top: -55px; fill: white }
+}
+#letteri{
+  position: absolute;
+  padding-top: 170px;
+  /* font-size: 300px; */
+  color: white;
+  top: 118px;
+  left: 443pt;
+  background-color: white;
+  width: 70px;
+  height: 20px;
+  margin-left: 19px;
+  margin-top: 260px;
+  border-radius: 10px;
+}
+.letters1{
+  font-size: 410px;
+  position: absolute;
+  right: 390pt;
+  top: 118px;
+  background: transparent;
+  color: white;
+}
+.letters2{
+  font-size: 320px;
+  position: absolute;
+  right: 249pt;
+  top: 205px;
+  background: transparent;
+  color: white;
+}
+/* .animation{
+  animation-name: changeI;
+  animation-duration: 4s;
+}
+@@keyframes changeI {
+  0% {top: 118px;}
+  100% {top: 190px;}
+
+} */
